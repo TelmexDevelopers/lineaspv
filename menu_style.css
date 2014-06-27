@@ -1,0 +1,174 @@
+.bg {background: url(images/button4a.gif);}
+/*tabla negra*/
+.menu {
+padding:0 0 0 32px; 
+margin:0; 
+list-style:none; 
+height:30px; 
+background:#fff url(images/button1a.jpg) repeat-x; 
+position:relative; 
+font-family:arial, verdana, sans-serif; 
+}
+
+.menu li.top {
+display:block; 
+float:left;
+ position:relative;
+ }
+ 
+.menu li a.top_link {
+display:block; 
+float:center; 
+height:30px; 
+line-height:30px; 
+color:#fff; 
+text-decoration:none;
+ font-size:13px; 
+ font-weight:bold;
+  padding:0 0 0 30px; 
+  cursor:pointer;
+  }
+  
+/*ancho de tablita*/
+.menu li a.top_link span 
+{
+float:center;
+ font-weight:bold;
+  display:block; 
+  padding:0 50px 0 12px;     /* aqui va el ancho de las opciones del menú principal */
+  height:30px;
+  }
+  
+.menu li a.top_link span.down 
+{
+float:left;
+ display:block; 
+ padding:0 24px 0 12px; 
+ height:30px; 
+ }
+
+.menu li a.top_link:hover 
+{
+background: url(images/button4a.gif) no-repeat;
+}
+
+.menu li a.top_link:hover span 
+{
+color:white;
+background:url(images/button4a.gif) no-repeat right top;
+}
+
+
+.menu li a.top_link:hover span.down 
+{
+background:url(images/button4a.gif) no-repeat right top;
+}
+
+.menu li:hover > a.top_link 
+{
+color:white;
+background: url(images/button4a.gif) no-repeat;
+}
+
+
+.menu li:hover > a.top_link span 
+{
+background:url(images/button4a.gif) no-repeat right top;
+}
+
+
+.menu li:hover > a.top_link span.down 
+{
+color:yellow;
+background:url(images/button4a.gif) no-repeat right top;
+}
+
+
+.menu table 
+{
+border-collapse:collapse; 
+width:0;
+ height:0; 
+ position:absolute; 
+ top:0; 
+ left:0;
+ }
+
+.menu a:hover 
+{
+visibility:visible;
+}
+
+.menu li:hover {
+position:relative; z-index:80;
+}
+
+/*acomoda las tablas desplegables*/
+.menu ul, 
+.menu :hover ul ul, 
+.menu :hover ul :hover ul ul,
+.menu :hover ul :hover ul :hover ul ul,
+.menu :hover ul :hover ul :hover ul :hover ul ul 
+{
+position:absolute; 
+left:-9999px; 
+top:-9999px; 
+width:0; 
+height:0; 
+margin:0; 
+padding:0; 
+list-style:none;
+}
+
+/*tamaño del seleccionador*/
+.menu :hover ul.sub 
+{
+left:2px; 
+top:30px;
+ right:0px; 
+ background: #fff; 
+ padding:3px 0; 
+ border:1px solid #999999; 
+ white-space:nowrap; 
+ width:150px; 
+ height:auto;
+ }
+/*espacio de los desplegables*/ 
+.menu :hover ul.sub li 
+{
+right:1px;
+display:block; 
+height:20px; 
+position:relative; 
+float:center; 
+width:150px;
+}
+.menu :hover ul.sub li a 
+{
+font-weight:normal;
+display:block; 
+font-size:12px; 
+height:20px; 
+width:140px; 
+line-height:20px; 
+text-indent:3px; 
+color:#000; 
+text-decoration:none; 
+border:3px solid #fff; 
+border-width:0 0 0 3px;
+}
+
+
+
+.menu :hover ul.sub li a:hover 
+{
+/* background:url(images/button4a.gif) repeat right top;     /* color de las opciones del submenus hacia abajo */
+ background:#510051;
+ color:white;
+ font-size:12px; 
+ font-weight:bold;
+ }
+
+
+
+
